@@ -7,4 +7,7 @@
 #include "shawboard.dtsi"
 #include "shawboard-layouts.dtsi"
 
-&default_transform{}
+&physical_layout0 {
+
+    transform = <&matrix_transform0>;
+};

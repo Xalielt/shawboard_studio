@@ -5,3 +5,4 @@
  */
 
 #include "shawboard.dtsi"
+#include "my_keyboard-layouts.dtsi"

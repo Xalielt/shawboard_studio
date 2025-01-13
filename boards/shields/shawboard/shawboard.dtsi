@@ -3,12 +3,8 @@
  *
  * SPDX-License-Identifier: MIT
  */
-
 #include <dt-bindings/zmk/matrix_transform.h>
-&physical_layout0 {
-    kscan = <&kscan0>;
-    transform = <&default_transform>;
-};
+
 / {
 
 	chosen {
@@ -54,4 +50,9 @@
 		;
 	};
 
+};
+
+&physical_layout0 {
+    kscan = <&kscan0>;
+    transform = <&default_transform>;
 };

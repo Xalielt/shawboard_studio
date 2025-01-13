@@ -6,3 +6,5 @@
 
 #include "shawboard.dtsi"
 #include "shawboard-layouts.dtsi"
+
+&default_transform{}

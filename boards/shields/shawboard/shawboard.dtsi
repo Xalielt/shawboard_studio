@@ -13,7 +13,7 @@
 		zmk,physical-layout = &physical_layout0;
 	};
 
-	default_transform: keymap_transform_0 {
+	default_transform: keymap_transform0 {
 		compatible = "zmk,matrix-transform";
 		columns = <36>;
 		rows = <1>;

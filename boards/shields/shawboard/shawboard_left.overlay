@@ -5,5 +5,3 @@
  */
 
 #include "shawboard.dtsi"
-
-#include <input/processors.dtsi>

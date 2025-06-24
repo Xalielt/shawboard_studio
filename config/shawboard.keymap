@@ -37,40 +37,17 @@
         copy_to_new_tab: copy_to_new_tab {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LC(C) &kp LGUI(N1) &kp LC(T) &kp LC(V) &kp ENTER>;
+            bindings = <&kp LC(C) &kp LC(C) &kp LC(T) &kp LC(V) &kp ENTER>;
             label = "COPY_TO_NEW_TAB";
         };
 
         boiler_plate: boiler_plate {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = < &kp I &kp M &kp P>;
+            bindings = <&kp I &kp M &kp P>;
             label = "BOILER_PLATE";
         };
 
-
-        sig: sig {
-            label = "sig";
-            compatible = "zmk,behavior-macro";
-	    wait-ms = <35>;
-	    tap-ms = <35>;
-            #binding-cells = <0>;
-            bindings
-                = <&macro_tap &kp LS(J) &kp I &kp M &kp SPACE &kp LS(S) &kp H &kp A &kp W &kp RET> 
-		, <&macro_tap &kp J &kp I &kp M &kp ATSN &kp J &kp I &kp M &kp S &kp H &kp A &kp W &kp DOT &kp C &kp O &kp M &kp RET>
-		;
-        };
-	
-	signum: signum {
-            label = "signum";
-            compatible = "zmk,behavior-macro";
-	    wait-ms = <35>;
-	    tap-ms = <35>;
-            #binding-cells = <0>;
-            bindings
-                = <&macro_tap &kp N0 &kp N4 &kp N6 &kp N7 &kp SPACE &kp N7 &kp N2 &kp N4 &kp SPACE &kp N4 &kp N3 &kp N1 &kp RET>
-		;
-        };
     };
 };
 

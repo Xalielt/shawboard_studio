@@ -210,7 +210,7 @@
         Wayer_tap_layer {
             bindings = <
 &kp HOME   &kp END  &kp PAGE_UP  &kp PAGE_DOWN  &kp K_APP    &kp LC(X)        &kp LC(C)      &kp UP    &kp LC(V)  &kp P
-&kp LSHFT  &mt LCTRL S    &mt LALT D        &mt LGUI G          &none        &kp LC(Z)        &mt RGUI LEFT       &mt RALT DOWN  &mt RCTRL RIGHT  &kp RSHFT
+&kp LSHFT  &mt LCTRL S    &mt LALT D        &mt LGUI G          &none        &kp LC(Z)        &kp LEFT       &kp DOWN  &kp RIGHT  &kp RSHFT
 &kp LCTRL  &kp X    &kp C        &kp V          &none        &kp RGUI         &none          &none     &none      &mt LCTRL RET
                     &to 3        &kp LALT       &kp LGUI     &mt LCTRL SPACE  &mt LCTRL RET  &to 0
             >;

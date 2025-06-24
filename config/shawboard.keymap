@@ -37,7 +37,7 @@
         copy_to_new_tab: copy_to_new_tab {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LC(C) &kp LC(C) &kp LC(T) &kp LC(V) &kp ENTER>;
+            bindings = <&kp LC(C) &kp LG(N1) &kp LC(T) &kp LC(V) &kp ENTER>;
             label = "COPY_TO_NEW_TAB";
         };
 

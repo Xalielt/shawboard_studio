@@ -192,7 +192,7 @@
         numpad_layer {
             bindings = <
 &kp F1        &kp F2   &kp F3   &kp F4    &none       &kp KP_MULTIPLY  &kp N7         &kp N8  &kp N9  &kp EQUAL
-&mt LSHFT F5  &kp F6   &kp F7   &kp F8    &none       &kp KP_DOT       &kp N4         &kp N5  &kp N6  &mt RSHFT KP_MINUS
+&mt LSHFT F5  &mt LCTRL F6   &mt LALT F7   &mt LGUI F8    &none       &kp KP_DOT       &mt RGUI N4         &mt RALT N5  &mt RCTRL N6  &mt RSHFT KP_MINUS
 &mt LCTRL F9  &kp F10  &kp F11  &kp F12   &none       &kp N0           &kp N1         &kp N2  &kp N3  &mt LCTRL KP_DIVIDE
                        &to 3    &kp LALT  &kp LGUI    &mt LCTRL SPACE  &mt LCTRL RET  &to 0
             >;
@@ -201,7 +201,7 @@
         Mayer_tap_layer {
             bindings = <
 &kp HOME   &kp END  &kp PAGE_UP  &kp PAGE_DOWN  &kp K_APP    &kp LG(X)        &kp LG(C)      &kp UP    &kp LG(V)  &kp P
-&kp LSHFT  &kp S    &kp D        &none          &none        &kp LG(Z)        &kp LEFT       &kp DOWN  &kp RIGHT  &kp RSHFT
+&kp LSHFT  &mt LCTRL S    &mt LALT D        &mt LGUI G        &none        &kp LG(Z)        &mt RGUI LEFT       &mt RALT DOWN  &mt RCTRL RIGHT  &kp RSHFT
 &kp LCTRL  &kp X    &kp C        &kp V          &none        &kp RGUI         &none          &none     &none      &mt LCTRL RET
                     &to 4        &kp LALT       &kp LGUI     &mt LCTRL SPACE  &mt LCTRL RET  &to 0
             >;
@@ -210,7 +210,7 @@
         Wayer_tap_layer {
             bindings = <
 &kp HOME   &kp END  &kp PAGE_UP  &kp PAGE_DOWN  &kp K_APP    &kp LC(X)        &kp LC(C)      &kp UP    &kp LC(V)  &kp P
-&kp LSHFT  &kp S    &kp D        &none          &none        &kp LC(Z)        &kp LEFT       &kp DOWN  &kp RIGHT  &kp RSHFT
+&kp LSHFT  &mt LCTRL S    &mt LALT D        &mt LGUI G          &none        &kp LC(Z)        &mt RGUI LEFT       &mt RALT DOWN  &mt RCTRL RIGHT  &kp RSHFT
 &kp LCTRL  &kp X    &kp C        &kp V          &none        &kp RGUI         &none          &none     &none      &mt LCTRL RET
                     &to 3        &kp LALT       &kp LGUI     &mt LCTRL SPACE  &mt LCTRL RET  &to 0
             >;

@@ -201,7 +201,7 @@
         Mayer_tap_layer {
             bindings = <
 &kp HOME   &kp END  &kp PAGE_UP  &kp PAGE_DOWN  &kp K_APP    &kp LG(X)        &kp LG(C)      &kp UP    &kp LG(V)  &kp P
-&kp LSHFT  &mt LCTRL S    &mt LALT D        &mt LGUI G        &none        &kp LG(Z)        &mt RGUI LEFT       &mt RALT DOWN  &mt RCTRL RIGHT  &kp RSHFT
+&kp LSHFT  &mt LCTRL S    &mt LALT D        &mt LGUI G        &none        &kp LG(Z)        &kp LEFT       &kp DOWN  &kp RIGHT  &kp RSHFT
 &kp LCTRL  &kp X    &kp C        &kp V          &none        &kp RGUI         &none          &none     &none      &mt LCTRL RET
                     &to 4        &kp LALT       &kp LGUI     &mt LCTRL SPACE  &mt LCTRL RET  &to 0
             >;

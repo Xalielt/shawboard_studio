@@ -247,9 +247,9 @@
 
         game {
             bindings = <
-&trans  &trans  &kp W   &trans     &trans       &trans  &trans  &trans  &trans  &trans
-&trans  &kp A   &kp S   &kp D      &trans       &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans     &trans       &trans  &trans  &trans  &trans  &trans
+&kp I   &kp E   &kp W   &kp R      &kp F3       &trans  &trans  &trans  &trans  &trans
+&trans  &kp A   &kp S   &kp D      &kp F4       &trans  &trans  &trans  &trans  &trans
+&kp G   &trans  &trans  &trans     &trans       &trans  &trans  &trans  &trans  &trans
                 &trans  &kp LSHFT  &kp SPACE    &trans  &trans  &to 0
             >;
         };

@@ -211,8 +211,8 @@
 
         numpad_layer {
             bindings = <
-&kp F1         &kp F2         &kp F3        &kp F4        &none       &kp KP_MULTIPLY  &kp N7         &kp N8        &kp N9         &kp EQUAL
-&hrl LSHFT F5  &hrl LCTRL F6  &hrl LALT F7  &hrl LGUI F8  &none       &kp KP_DOT       &hrr RGUI N4   &hrr RALT N5  &hrr RCTRL N6  &hrr RSHFT KP_MINUS
+&kp F1         &kp F2         &kp F3        &kp F4        &lt 3 A     &kp KP_MULTIPLY  &kp N7         &kp N8        &kp N9         &kp EQUAL
+&hrl LSHFT F5  &hrl LCTRL F6  &hrl LALT F7  &hrl LGUI F8  &lt 4 A     &kp KP_DOT       &hrr RGUI N4   &hrr RALT N5  &hrr RCTRL N6  &hrr RSHFT KP_MINUS
 &mt LCTRL F9   &kp F10        &kp F11       &kp F12       &none       &kp N0           &kp N1         &kp N2        &kp N3         &mt LCTRL KP_DIVIDE
                               &to 3         &kp LALT      &kp LGUI    &mt LCTRL SPACE  &mt LCTRL RET  &to 0
             >;
@@ -262,6 +262,5 @@
                          &none         &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2          &bt BT_SEL 3          &bt BT_SEL 4
             >;
         };
-
     };
 };

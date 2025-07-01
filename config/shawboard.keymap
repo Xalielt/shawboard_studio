@@ -78,84 +78,98 @@
             timeout-ms = <40>;
             key-positions = <1 2>;
             bindings = <&kp GRAVE>;
+            layers = <0 1 2 4 5 3>;
         };
 
         combo_bspcl {
             timeout-ms = <40>;
             key-positions = <3 4>;
             bindings = <&kp BSPC>;
+            layers = <0 1 2 4 5 3>;
         };
 
         combo_tab {
             timeout-ms = <40>;
             key-positions = <10 11>;
             bindings = <&kp TAB>;
+            layers = <0 1 2 4 5 3>;
         };
 
         combo_word {
             timeout-ms = <40>;
             key-positions = <6 7 8>;
             bindings = <&kp LC(BSPC)>;
+            layers = <0 1 2 4 5 3>;
         };
 
         combo_bspc {
             timeout-ms = <40>;
             key-positions = <6 7>;
             bindings = <&kp BSPC>;
+            layers = <0 1 2 4 5 3>;
         };
 
         combo_del {
             timeout-ms = <40>;
             key-positions = <7 8>;
             bindings = <&kp DEL>;
+            layers = <0 1 2 4 5 3>;
         };
 
         combo_pipe {
             timeout-ms = <40>;
             key-positions = <8 9>;
             bindings = <&kp BSLH>;
+            layers = <0 1 2 4 5 3>;
         };
 
         combo_dash {
             timeout-ms = <40>;
             key-positions = <15 16>;
             bindings = <&kp MINUS>;
+            layers = <0 1 2 4 5 3>;
         };
 
         combo_qmrk {
             timeout-ms = <40>;
             key-positions = <16 17>;
             bindings = <&kp SINGLE_QUOTE>;
+            layers = <0 1 2 4 5 3>;
         };
 
         combo_excl {
             timeout-ms = <40>;
             key-positions = <16 17 18>;
             bindings = <&kp EXCL>;
+            layers = <0 1 2 4 5 3>;
         };
 
         combo_lpar {
             timeout-ms = <40>;
             key-positions = <26 27>;
             bindings = <&kp LPAR>;
+            layers = <0 1 2 4 5 3>;
         };
 
         combo_rpar {
             timeout-ms = <40>;
             key-positions = <27 28>;
             bindings = <&kp RPAR>;
+            layers = <0 1 2 4 5 3>;
         };
 
         combo_lbr {
             timeout-ms = <40>;
             key-positions = <26 27 28>;
             bindings = <&kp LEFT_BRACKET>;
+            layers = <0 1 2 4 5 3>;
         };
 
         combo_rbr {
             timeout-ms = <40>;
             key-positions = <27 28 29>;
             bindings = <&kp RIGHT_BRACKET>;
+            layers = <0 1 2 4 5 3>;
         };
     };
 

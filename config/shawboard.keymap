@@ -50,6 +50,20 @@
             bindings = <&kp I &kp M &kp P>;
             label = "BOILER_PLATE";
         };
+
+        bt0_mac: batman {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&bt BT_SEL 0 &to 0>;
+            label = "BATMAN";
+        };
+
+        bt1_win: bt1_win {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&bt BT_SEL 1 &to 0>;
+            label = "BT1_WIN";
+        };
     };
 };
 
@@ -210,7 +224,7 @@
             bindings = <
 &lt 7 Q       &lt 5 W       &kp E        &kp R        &lt 3 T     &kp Y                       &kp U          &kp I        &kp O         &kp P
 &hrl LSHFT A  &hrl LCTRL S  &hrl LALT D  &hrl LGUI F  &lt 4 G     &kp H                       &hrr RGUI J    &hrr RALT K  &hrr RCTRL L  &hrr RSHFT SEMI
-&mt LCTRL Z   &kp X         &kp C        &lt 1 V      &lt 2 B     &kp N                       &kp M          &kp COMMA    &kp DOT       &mt LCTRL FSLH
+&kp Z         &kp X         &kp C        &lt 1 V      &lt 2 B     &kp N                       &kp M          &kp COMMA    &kp DOT       &kp SLASH
                             &to 1        &kp LALT     &kp LGUI    &mt LC(LS(LA(LGUI))) SPACE  &mt LCTRL RET  &kp RALT
             >;
         };
@@ -218,7 +232,7 @@
         symbol_layer {
             bindings = <
 &kp EXCL  &kp AT_SIGN  &kp DLLR         &none            &kp PERCENT    &kp CARET        &kp AMPS       &kp EQUAL  &kp LPAR  &kp RPAR
-&kp TAB   &kp LC(S)    &kp DQT          &kp PIPE2        &kp HASH       &kp MINUS        &kp EQUAL      &kp LBKT   &kp RBKT  &kp DEL
+&kp TAB   &kp S        &kp DQT          &kp PIPE2        &kp HASH       &kp MINUS        &kp EQUAL      &kp LBKT   &kp RBKT  &kp DEL
 &kp ESC   &kp TILDE    &kp NON_US_BSLH  &kp NON_US_HASH  &kp TILDE2     &kp MINUS        &kp GRAVE      &kp LBKT   &kp RBKT  &kp DEL
                        &to 2            &kp LALT         &kp LGUI       &mt LCTRL SPACE  &mt LCTRL RET  &to 0
             >;
@@ -226,9 +240,9 @@
 
         numpad_layer {
             bindings = <
-&kp F1         &kp F2         &kp F3        &kp F4        &lt 3 A     &kp KP_MULTIPLY  &kp N7         &kp N8        &kp N9         &kp EQUAL
+&kp F1         &kp F2         &kp F3        &kp F4        &lt 3 A     &kp EQUAL        &kp N7         &kp N8        &kp N9         &kp KP_MULTIPLY
 &hrl LSHFT F5  &hrl LCTRL F6  &hrl LALT F7  &hrl LGUI F8  &lt 4 A     &kp KP_DOT       &hrr RGUI N4   &hrr RALT N5  &hrr RCTRL N6  &hrr RSHFT KP_MINUS
-&mt LCTRL F9   &kp F10        &kp F11       &kp F12       &none       &kp N0           &kp N1         &kp N2        &kp N3         &mt LCTRL KP_DIVIDE
+&kp F9         &kp F10        &kp F11       &kp F12       &lt 0 A     &kp N0           &kp N1         &kp N2        &kp N3         &kp KP_SLASH
                               &to 3         &kp LALT      &kp LGUI    &mt LCTRL SPACE  &mt LCTRL RET  &to 0
             >;
         };
@@ -237,7 +251,7 @@
             bindings = <
 &kp HOME   &kp END      &kp PAGE_UP  &kp PAGE_DOWN  &kp K_APP    &kp LG(X)        &kp LG(C)      &kp UP    &kp LG(V)  &kp P
 &kp LSHFT  &mt LCTRL S  &mt LALT D   &mt LGUI G     &none        &kp LG(Z)        &kp LEFT       &kp DOWN  &kp RIGHT  &kp RSHFT
-&kp LCTRL  &kp X        &kp C        &kp V          &none        &kp RGUI         &none          &none     &none      &mt LCTRL RET
+&kp Z      &kp X        &kp C        &kp V          &none        &kp RGUI         &none          &none     &none      &kp ENTER
                         &to 4        &kp LALT       &kp LGUI     &mt LCTRL SPACE  &mt LCTRL RET  &to 0
             >;
         };
@@ -246,7 +260,7 @@
             bindings = <
 &kp HOME   &kp END       &kp PAGE_UP  &kp PAGE_DOWN  &kp K_APP    &kp LC(X)        &kp LC(C)      &kp UP    &kp LC(V)  &kp P
 &kp LSHFT  &hrl LCTRL S  &hrl LALT D  &hrl LGUI G    &none        &kp LC(Z)        &kp LEFT       &kp DOWN  &kp RIGHT  &kp RSHFT
-&kp LCTRL  &kp X         &kp C        &kp V          &none        &kp RGUI         &none          &none     &none      &mt LCTRL RET
+&kp Z      &kp X         &kp C        &kp V          &none        &kp RGUI         &none          &none     &none      &kp ENTER
                          &to 5        &kp LALT       &kp LGUI     &mt LCTRL SPACE  &mt LCTRL RET  &to 0
             >;
         };
@@ -262,10 +276,10 @@
 
         game {
             bindings = <
-&kp I   &kp E   &kp W   &kp R      &kp F3       &trans  &trans  &trans  &trans  &trans
-&trans  &kp A   &kp S   &kp D      &kp F4       &trans  &trans  &trans  &trans  &trans
-&kp G   &trans  &trans  &trans     &kp Q        &trans  &trans  &trans  &trans  &trans
-                &trans  &kp LSHFT  &kp SPACE    &trans  &trans  &to 0
+&kp I  &kp E  &kp W  &kp R      &kp F3       &trans  &trans  &trans  &trans  &trans
+&none  &kp A  &kp S  &kp D      &kp F4       &trans  &trans  &trans  &trans  &trans
+&kp G  &none  &none  &none      &kp Q        &trans  &trans  &trans  &trans  &trans
+              &none  &kp LSHFT  &kp SPACE    &trans  &trans  &to 0
             >;
         };
 
@@ -274,7 +288,7 @@
 &none      &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &kp C_VOLUME_UP       &kp C_VOLUME_DOWN     &kp C_MUTE    &none  &bt BT_CLR
 &kp LSHFT  &out OUT_BLE  &out OUT_USB  &none         &none           &kp C_BRIGHTNESS_INC  &kp C_BRIGHTNESS_DEC  &none         &none  &kp RSHFT
 &kp LCTRL  &bt BT_NXT    &bt BT_PRV    &none         &none           &none                 &none                 &none         &none  &bt BT_SEL 4
-                         &none         &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2          &bt BT_SEL 3          &bt BT_SEL 4
+                         &none         &bt0_mac      &bt1_win        &bt BT_SEL 2          &bt BT_SEL 3          &bt BT_SEL 4
             >;
         };
     };

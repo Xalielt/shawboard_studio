@@ -22,7 +22,7 @@
         Macro_HRM_1: Macro_HRM_1 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LS(H) &kp E &kp L &kp L>;
+            bindings = <&kp LS(H) &kp K &kp L &kp L>;
             label = "MACRO_HRM_1";
         };
 

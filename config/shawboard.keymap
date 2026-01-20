@@ -50,6 +50,13 @@
             bindings = <&kp I &kp M &kp P>;
             label = "BOILER_PLATE";
         };
+
+        face_palm: face_palm {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none &kp COLON &kp F &kp A &kp C &kp E &kp P &kp A &kp L &kp M &kp COLON>;
+            label = "FACE_PALM";
+        };
     };
 };
 
@@ -155,6 +162,11 @@
             timeout-ms = <40>;
             key-positions = <26 27 28>;
             bindings = <&kp RIGHT_BRACKET>;
+        };
+
+        f_palm {
+            bindings = <&face_palm>;
+            key-positions = <6 7 8>;
         };
     };
 
